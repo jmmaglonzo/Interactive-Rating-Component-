@@ -1,0 +1,138 @@
+@import "configs";
+
+.container {
+  width: 100%;
+  max-width: 37.5rem;
+  background-color: $card-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem;
+  border-radius: 20px;
+  overflow: hidden;
+
+  .review-section {
+    .star {
+      height: 1.6rem;
+      width: 1.6rem;
+      background-color: hsl(213deg, 20%, 22%);
+      box-shadow: $box-shadow;
+      padding: 2rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    .content {
+      .title {
+        color: #fff;
+        margin-bottom: 1rem;
+      }
+
+      .desc {
+        color: $text-color;
+        line-height: 1.6;
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+      }
+    }
+
+    .rating-numbers {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 2rem;
+      font-size: 2rem;
+      color: $text-color;
+      cursor: pointer;
+      margin-bottom: 3rem;
+
+      .numbers {
+        background-color: $secondary;
+        box-shadow: $box-shadow;
+        border-radius: 50%;
+        height: 5rem;
+        width: 5rem;
+        font-size: 1.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        transition: all ease 0.3s;
+        border: none;
+        color: $White;
+        cursor: pointer;
+        font-family: inherit;
+
+        &:hover {
+          background-color: $hover;
+          color: $White;
+        }
+        &:focus {
+          background-color: $orange;
+        }
+      }
+    }
+
+    .btn-primary {
+      width: 100%;
+      border: none;
+      border-radius: 20px;
+      padding: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #fff;
+      background-color: $orange;
+      font-weight: $weight-large;
+      font-family: inherit;
+
+      cursor: pointer;
+
+      &:hover {
+        background-color: white;
+        color: $orange;
+        transition: all ease 0.3s;
+      }
+      &:active {
+        transform: translate(1px, 3px);
+      }
+    }
+  }
+
+  .ty-section {
+    text-align: center;
+    position: relative;
+    .chip-img {
+      margin-bottom: 2rem;
+    }
+
+    .rating-count {
+      background-color: $secondary;
+      display: inline-block;
+      color: $orange;
+      padding: 0.5rem 1.5rem;
+      border-radius: 20px;
+      margin-bottom: 3rem;
+    }
+
+    .thankyou {
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+    .ty-desc {
+      color: $text-color;
+      font-size: 1.4rem;
+      line-height: 1.6;
+      font-weight: $weight-small;
+    }
+  }
+
+  .checked {
+    background-color: $orange;
+    color: $White;
+  }
+}

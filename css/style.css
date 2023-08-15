@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(228, 11%, 9%);
+  height: 100vh;
+  font-family: "Overpass", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 37.5rem;
+  background-color: hsl(210, 19%, 18%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.container .review-section .star {
+  height: 1.6rem;
+  width: 1.6rem;
+  background-color: hsl(213, 20%, 22%);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.247);
+  padding: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.container .review-section .content .title {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.container .review-section .content .desc {
+  color: hsl(216, 12%, 54%);
+  line-height: 1.6;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+.container .review-section .rating-numbers {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  font-size: 2rem;
+  color: hsl(216, 12%, 54%);
+  cursor: pointer;
+  margin-bottom: 3rem;
+}
+.container .review-section .rating-numbers .numbers {
+  background-color: hsl(213, 20%, 22%);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.247);
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  transition: all ease 0.3s;
+  border: none;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  font-family: inherit;
+}
+.container .review-section .rating-numbers .numbers:hover {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+}
+.container .review-section .rating-numbers .numbers:focus {
+  background-color: #fb7413;
+}
+.container .review-section .btn-primary {
+  width: 100%;
+  border: none;
+  border-radius: 20px;
+  padding: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+  background-color: #fb7413;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+}
+.container .review-section .btn-primary:hover {
+  background-color: white;
+  color: #fb7413;
+  transition: all ease 0.3s;
+}
+.container .review-section .btn-primary:active {
+  transform: translate(1px, 3px);
+}
+.container .ty-section {
+  text-align: center;
+  position: relative;
+}
+.container .ty-section .chip-img {
+  margin-bottom: 2rem;
+}
+.container .ty-section .rating-count {
+  background-color: hsl(213, 20%, 22%);
+  display: inline-block;
+  color: #fb7413;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  margin-bottom: 3rem;
+}
+.container .ty-section .thankyou {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.container .ty-section .ty-desc {
+  color: hsl(216, 12%, 54%);
+  font-size: 1.4rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+.container .checked {
+  background-color: #fb7413;
+  color: hsl(0, 0%, 100%);
+}

@@ -1,0 +1,47 @@
+// ? COLORS
+
+// ! PRIMARY
+$orange: #fb7413;
+
+// ? NEUTRAL
+$White: hsl(0, 0%, 100%);
+$hover: hsl(217, 12%, 63%);
+$text-color: hsl(216, 12%, 54%);
+$card-color: hsl(210, 19%, 18%);
+$bg-color: hsl(228, 11%, 9%);
+$secondary: hsl(213deg, 20%, 22%);
+$weight-small: 400;
+$weight-large: 700;
+$box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.247);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $bg-color;
+  height: 100vh;
+  font-family: "Overpass", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.hidden {
+  display: none;
+}
